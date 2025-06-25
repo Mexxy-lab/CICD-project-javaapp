@@ -1,7 +1,7 @@
 ---
 # Set up file for centos
 - name: Install and Configure SonarQube on CentOS 9
-  hosts: nexusserver
+  hosts: sonarqubeserver
   become: yes
   vars:
     sonar_version: "8.3.0.34182"

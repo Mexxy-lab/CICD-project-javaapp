@@ -38,3 +38,13 @@ http://ipaddress:8081
     NEXUS-GRP-REPO
     NEXUSIP
     NEXUSPORT 
+
+## Integrating Slack to jenkins for notification purposes 
+
+    - Create a slack account and create a channel in your workspace 
+    - Go to api.slack.com/apps and create an jenkins bot app and attach your workspace - Pumejlab for my case 
+    - Go to oauth and permissions section and scroll down to Scopes and select chat:write
+    - Then scroll back up and click install app to worksace and copy the token generated 
+    - Go back to your jenkins console and install the slack plugin and also assign the credentials.
+    - Also update the jenkins system configuration to use the custom bot server, add your workspace, and channel name. Test connection, you should get a success message. 
+    - Now you can use the post notification features on your Build jobs. 

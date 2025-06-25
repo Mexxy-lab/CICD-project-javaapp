@@ -1,6 +1,6 @@
 ---
 - name: Undo SonarQube Setup on CentOS 9
-  hosts: nexusserver
+  hosts: sonarqubeserver
   become: yes
   vars:
     sonar_version: "8.3.0.34182"
@@ -121,7 +121,7 @@
       firewalld:
         port: "{{ item }}"
         permanent: yes
-        state: disabled
+        state: present
       loop:
         - 80/tcp
         - 9000/tcp
