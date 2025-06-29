@@ -136,3 +136,28 @@ export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.20.1.1-2.el9.x86_64
 export PATH=$JAVA_HOME/bin:$PATH
 ```
 
+## You can also set your own Qulaity Gate metrics from the Sonarqube server
+
+![alt text](pictures/image.png)
+
+- Create and name your own Quality gates option 
+- Add your metrics with add condition button, set your qualitygate as default so it does not use the built in one. 
+- Update jenkins sonarqube build job with a post build action - "Quality gate plugin".
+- Run the job again and you should get the updated results and job should pass or fail per your set metrics 
+
+![alt text](pictures/image-1.png)
+
+## To upload our built artifacts, that is the vprofile.war file. 
+
+- Have to install some plugins Copy, Zentimestamp for versioning and Nexus Artifact uploader.
+- Create the Copy job (Deploy to Nexus) for uploading the files to the Nexus repository 
+- From build section, select "copy artifacts from another project", file type = "**/*.war". Checkmark fingerprint artifacts. Also update the build job name thats generating the airtifacts
+- Also update the "Nexus upload artifacts section, then add artifacts section also. 
+
+## Lastly, build a full visualized pipeline with the jobs created 
+
+- Install needed plug-ins like build pipeline, pipeline build etc 
+- Create the pipeline view job for the entire build jobs by clicking on the plus icon 
+- Fill out the required sections and then run the pipeline. 
+
+![alt text](pictures/image-2.png)
