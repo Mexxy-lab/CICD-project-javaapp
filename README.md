@@ -159,5 +159,6 @@ export PATH=$JAVA_HOME/bin:$PATH
 - Install needed plug-ins like build pipeline, pipeline build etc 
 - Create the pipeline view job for the entire build jobs by clicking on the plus icon 
 - Fill out the required sections and then run the pipeline. 
+- You should see sample pipeline in below picture running. 
 
 ![alt text](pictures/image-2.png)
