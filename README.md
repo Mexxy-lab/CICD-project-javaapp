@@ -160,5 +160,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 - Create the pipeline view job for the entire build jobs by clicking on the plus icon 
 - Fill out the required sections and then run the pipeline. 
 - You should see sample pipeline in below picture running. 
+- You can add the auto trigger so the pipeline starts the build using a git push command. Expose your jenkins server using ngrok and add the URL - https://73af-104-9-152-207.ngrok-free.app/github-webhook/ to webhook section of your repository. 
+- Make sure to choose "GitHub hook trigger for GITScm polling" option on your build job. 
 
 ![alt text](pictures/image-2.png)
