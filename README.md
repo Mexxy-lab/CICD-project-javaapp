@@ -2,6 +2,10 @@
 
 - This project demostrates how to set up Nexus repository using VMs or an EC2 instance for a Java application project
 
+## Project Infrasturcture 
+
+![alt text](pictures/image3.png)
+
 ### Pre-requisite Ensuer services are running on both VMs. Nexus service on port 8081 and Sonatqube service on port 9000
 
 - Set up your VMs or provision an EC instance on AWS 
