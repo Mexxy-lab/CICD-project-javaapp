@@ -1,6 +1,7 @@
-## CI/CD set up for a java application - vprofile.
+## CI set up for a java application project - vprofile.
 
-- This project demostrates how to set up Nexus repository using VMs or an EC2 instance for a Java application project
+- This project demostrates how to set up Nexus repository using VMs or an EC2 instance for a Java application project continous integration. 
+- The artifacts are built and deployed to the Nexus prod, qa repository after undergoing Unit/Intergration & Sonarqube quality gate checks. 
 
 ## Project Infrasturcture 
 
